@@ -7,7 +7,7 @@ const port = 3000;
 app.use(bodyParser.json());
 app.use(
     bodyParser.urlencoded({
-        extended:true,
+        extended:false,
     })
 
 )
@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 
 app.get('/login',db.getUser1);
 
-app.post('/signup',db.createUser);
+app.post('/signuP',db.createUser);
 
 
 app.listen(port,function(){
