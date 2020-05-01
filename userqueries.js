@@ -16,7 +16,7 @@ const createUser = (req, res) => {
     })
 }
 
-const getUser = (req, res) => {
+const getUser1 = (req, res) => {
     const { email, password } = req.body;
     pool.query('SELECT * FROM users WHERE "password" = $2 and "email" = $1', [email, password],
         (error, result) => {
