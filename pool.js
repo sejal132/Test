@@ -4,7 +4,7 @@ const pool = new Pool({
     user: 'me',
     host: 'localhost',
     database: 'logindb',
-    password: 'password',
+    password: 'password1',
     port: 5432,
 });
 
